@@ -1,0 +1,1 @@
+(function(){try{var e=document.documentElement,a=window.localStorage,t=a.getItem("cfo.theme");(t==="light"||t==="dark")&&e.setAttribute("data-theme",t),a.getItem("cfo.hide")==="1"&&e.setAttribute("data-hide","1")}catch{}})();

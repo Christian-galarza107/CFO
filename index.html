@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <!-- Política de seguridad: solo código y recursos propios; sin scripts en línea, sin red a terceros,
+       sin envío de formularios. 'unsafe-inline' solo en estilos (los atributos style="--w:…" de las barras). -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; worker-src 'self'; manifest-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#f3f5f8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#08111d" media="(prefers-color-scheme: dark)">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="CFO">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <title>CFO Personal</title>
+  <meta name="description" content="Tus finanzas personales, locales y privadas. Todo se guarda solo en este dispositivo.">
+
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+
+  <script src="boot.js"></script>
+
+  <link rel="preload" href="assets/fonts/manrope-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <div class="app">
+    <div class="banners" id="banners"></div>
+    <header class="app__header" id="app-header"></header>
+    <main class="app__main" id="main" tabindex="-1"></main>
+    <nav class="nav" id="nav" aria-label="Navegación principal"></nav>
+  </div>
+  <div class="toast-region" id="toast-region" role="status" aria-live="polite"></div>
+  <noscript>CFO Personal necesita JavaScript para funcionar.</noscript>
+  <script src="app.js"></script>
+</body>
+</html>
